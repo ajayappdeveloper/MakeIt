@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+
+    <color name="orange">#fc4103</color>
+    <color name="green">#339e58</color>
+    <color name="blue">#3d2d69</color>
+    <color name="pink">#991c5e</color>
+    <color name="gray">#cbc0d1</color>
+    <color name="yellow">#f5dd42</color>
+
+    <array name="projectColors">
+
+        <item>@color/orange</item>
+        <item>@color/green</item>
+        <item>@color/blue</item>
+        <item>@color/pink</item>
+        <item>@color/gray</item>
+        <item>@color/yellow</item>
+
+    </array>
+</resources>
