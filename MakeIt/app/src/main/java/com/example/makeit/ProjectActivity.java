@@ -1,18 +1,23 @@
 package com.example.makeit;
 
 import android.os.Bundle;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.appcompat.app.ActionBar;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
 import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.model.Project;
 import com.example.utility.SpacingItemDecorator;
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
 import java.util.ArrayList;
 import java.util.Date;
@@ -23,6 +28,8 @@ public class ProjectActivity extends Fragment {
 
     ProjectAdapter adapter;
 
+    FloatingActionButton addButton;
+
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
@@ -30,6 +37,10 @@ public class ProjectActivity extends Fragment {
         View view = inflater.inflate(R.layout.project_activity,container,false);
 
         recyclerView = view.findViewById(R.id.recyclerView_project);
+
+        addButton = view.findViewById(R.id.floating_addButton);
+
+        registerOnClickListener();
 
         adapter = new ProjectAdapter(getContext(),this.loadProjects());
 
@@ -44,6 +55,16 @@ public class ProjectActivity extends Fragment {
 
         return view;
     }
+
+      public void registerOnClickListener(){
+        addButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Log.e("clicked","button clicked");
+            }
+        });
+      }
+
 
     public ArrayList<Project> loadProjects(){
         ArrayList<Project> projects = new ArrayList<>();

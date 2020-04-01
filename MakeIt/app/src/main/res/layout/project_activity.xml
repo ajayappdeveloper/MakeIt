@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
+<RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
     android:layout_width="match_parent"
@@ -7,9 +7,41 @@
     android:id="@+id/project_activity"
     android:background="@color/gray">
 
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:background="@color/green">
+
+    <TextView
+        android:id="@+id/project_title"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:text="Projects"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="#ffffff"
+        android:fontFamily="sans-serif"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="30dp"/>
+
+</RelativeLayout>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floating_addButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="30dp"
+        android:src="@drawable/plus"/>
 
     <androidx.recyclerview.widget.RecyclerView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:paddingRight="10dp"
+        android:paddingLeft="10dp"
+        android:paddingBottom="10dp"
+        android:paddingTop="5dp"
         android:id="@+id/recyclerView_project"/>
-</LinearLayout>
+</RelativeLayout>

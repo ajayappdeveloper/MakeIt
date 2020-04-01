@@ -23,13 +23,15 @@
         app:layout_constraintTop_toTopOf="parent">-->
 
 
+    <!--</LinearLayout>-->
+
     <TextView
         android:id="@+id/project_icon"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="100dp"
         android:layout_marginLeft="100dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="28dp"
         android:background="@drawable/round_views"
         android:gravity="center"
         android:text="M"
@@ -37,21 +39,20 @@
         android:textSize="30sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toStartOf="@+id/constraint"
+        app:layout_constraintHorizontal_bias="0.461"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-
-    <!--</LinearLayout>-->
 
     <TextView
         android:id="@+id/projectName_tv"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="24dp"
         android:text="MakeIt"
-        android:textStyle="bold"
         android:textSize="20sp"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.096"
+        app:layout_constraintHorizontal_bias="0.1"
         app:layout_constraintStart_toEndOf="@+id/project_icon"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -61,14 +62,14 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="24dp"
         android:layout_marginLeft="24dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="12dp"
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
         android:text="Project Management Application"
         android:textSize="15sp"
         android:textStyle="italic"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.004"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toEndOf="@+id/project_icon"
         app:layout_constraintTop_toBottomOf="@+id/projectName_tv" />
 
@@ -78,7 +79,7 @@
         android:layout_height="20dp"
         android:layout_marginStart="24dp"
         android:layout_marginLeft="24dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="8dp"
         android:text="Release: "
         android:textStyle="italic"
         app:layout_constraintEnd_toEndOf="parent"
@@ -90,11 +91,11 @@
         android:id="@+id/projectReleaseDate_tv"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="8dp"
         android:text="Mar 31, 2020"
         android:textStyle="italic"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.104"
+        app:layout_constraintHorizontal_bias="0.09"
         app:layout_constraintStart_toEndOf="@+id/projectDate_tv"
         app:layout_constraintTop_toBottomOf="@+id/projectDes_tv" />
 
@@ -104,7 +105,7 @@
         android:layout_height="40dp"
         android:layout_marginStart="24dp"
         android:layout_marginLeft="24dp"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="12dp"
         android:layout_marginEnd="24dp"
         android:layout_marginRight="24dp"
         app:layout_constraintEnd_toEndOf="parent"
